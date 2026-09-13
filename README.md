@@ -9,10 +9,10 @@ and communities. `strictnull` puts the second control next to the first, verifie
 how much of the "structure" was the degree sequence.
 
 ```
-pip install git+https://github.com/tsurutanmen/strictnull
+pip install strictnull
 ```
 
-A PyPI release is planned; until then install from GitHub as above. Requires numpy and [igraph](https://python.igraph.org). `networkx` is optional (for `Graph.from_networkx`).
+Requires numpy and [igraph](https://python.igraph.org). `networkx` is optional (for `Graph.from_networkx`).
 
 ## Thirty seconds
 
