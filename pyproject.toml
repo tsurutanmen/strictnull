@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strictnull"
+version = "0.1.0"
+description = "Build the control before you compare: degree-preserving null models for graphs, with the checks that make them a control."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Tsuruta Lab" }]
+keywords = ["null model", "configuration model", "degree-preserving", "network", "connectome", "control group", "igraph"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = ["numpy>=1.22", "igraph>=0.10"]
+
+[project.optional-dependencies]
+networkx = ["networkx>=2.6"]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/tsurutanmen/strictnull"
+Issues = "https://github.com/tsurutanmen/strictnull/issues"
+
+[project.scripts]
+strictnull = "strictnull.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["strictnull*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
