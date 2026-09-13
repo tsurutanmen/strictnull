@@ -23,7 +23,7 @@ matters" needs a control that keeps every node's degree and rewires everything e
 
 ## What to do
 
-1. Install: `pip install strictnull` (needs numpy and igraph; networkx optional).
+1. Install: `pip install git+https://github.com/tsurutanmen/strictnull` (needs numpy and igraph; networkx optional).
 2. Build the graph from what the user has (edge list CSV, adjacency matrix, networkx graph).
 3. Run the comparison with at least 20 draws per control:
 
